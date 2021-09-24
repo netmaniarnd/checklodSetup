@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/sequence_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="시작 인덱스 : "
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/et_start"
+                    android:layout_weight="1"
+                    android:hint="시작 인덱스"
+                    android:inputType="text"
+                    tools:ignore="HardcodedText" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="마지막 인덱스 : "
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/et_end"
+                    android:layout_weight="1"
+                    android:hint="마지막 인덱스"
+                    android:inputType="text"
+                    tools:ignore="HardcodedText" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="취소"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="확인"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+            </TableRow>
+
+        </LinearLayout>
+
+    </TableLayout>
+</layout>

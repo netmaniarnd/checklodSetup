@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.activity.OffsetActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/sticker_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2"
+                    android:hint="Sticker Number"
+                    android:inputType="text"
+                    android:textAlignment="center" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btn_select_sticker"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:text="Select" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/macaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2"
+                    android:hint="MacAddress"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btn_loggerlist"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:text="Logger List" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/btn_connect_gatt"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="Connect Gatt" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btn_disconnect_gatt"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:text="Disconnect Gatt" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3.5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="30dp"
+                        android:text="-80℃"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="-40℃"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="-20℃"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="5℃"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="20℃"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/read_offset1"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="30dp"
+                        android:hint="Read -80℃"
+                        android:inputType="numberSigned" />
+
+                    <TextView
+                        android:id="@+id/read_offset2"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="Read -40℃"
+                        android:inputType="numberSigned" />
+
+                    <TextView
+                        android:id="@+id/read_offset3"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="Read -20℃"
+                        android:inputType="numberSigned" />
+
+                    <TextView
+                        android:id="@+id/read_offset4"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="Read   5℃"
+                        android:inputType="numberSigned" />
+
+                    <TextView
+                        android:id="@+id/read_offset5"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="Read  20℃"
+                        android:inputType="numberSigned" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/offset1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:hint="Write -80℃"
+                        android:inputType="numberSigned" />
+
+                    <EditText
+                        android:id="@+id/offset2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Write -40℃"
+                        android:inputType="numberSigned" />
+
+                    <EditText
+                        android:id="@+id/offset3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Write -20℃"
+                        android:inputType="numberSigned" />
+
+                    <EditText
+                        android:id="@+id/offset4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Write   5℃"
+                        android:inputType="numberSigned" />
+
+                    <EditText
+                        android:id="@+id/offset5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Write  20℃"
+                        android:inputType="numberSigned" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/btn_read"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="Read Offset" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btn_write"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:text="Write Offset" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

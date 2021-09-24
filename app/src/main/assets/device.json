@@ -1,0 +1,27 @@
+[
+
+  {"id":"FF:FF:FF:FF:FF:00", "alias":"00"},
+  {"id":"FF:FF:FF:FF:FF:01", "alias":"01"},
+  {"id":"FF:FF:FF:FF:FF:02", "alias":"02"},
+  {"id":"FF:FF:FF:FF:FF:03", "alias":"03"},
+  {"id":"FF:FF:FF:FF:FF:AA", "alias":"AA"},
+  {"id":"FF:FF:FF:FF:FF:B3", "alias":"B3"},
+  {"id":"FF:FF:FF:FF:FF:B4", "alias":"B4"},
+  {"id":"FF:FF:FF:FF:FF:B5", "alias":"B5"},
+  {"id":"FF:FF:FF:FF:FF:B6", "alias":"B6"},
+  {"id":"FF:FF:FF:FF:FF:B7", "alias":"B7"},
+  {"id":"FF:FF:FF:FF:FF:B8", "alias":"B8"},
+  {"id":"FF:FF:FF:FF:FF:B9", "alias":"B9"},
+  {"id":"FF:FF:FF:FF:FF:BC", "alias":"BC"},
+  {"id":"FF:FF:FF:FF:FF:BD", "alias":"BD"},
+  {"id":"FF:FF:FF:FF:FF:BE", "alias":"BE"},
+  {"id":"FF:FF:FF:FF:FF:BF", "alias":"BF"},
+  {"id":"FF:FF:FF:FF:FF:C1", "alias":"C1"},
+  {"id":"FF:FF:FF:FF:FF:C2", "alias":"C2"},
+  {"id":"FF:FF:FF:FF:FF:C3", "alias":"C3"},
+  {"id":"FF:FF:FF:FF:FF:C4", "alias":"C4"},
+  {"id":"FF:FF:FF:FF:FF:C5", "alias":"C5"},
+  {"id":"FF:FF:FF:FF:FF:C6", "alias":"C6"},
+  {"id":"FF:FF:FF:FF:12:38", "alias":"1238"}
+
+]

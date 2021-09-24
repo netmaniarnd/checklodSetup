@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- GATT2 -->
+    <LinearLayout
+        android:id="@+id/container2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="요청 인덱스 : "
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/request_index"
+                android:layout_weight="1"
+                android:hint="요청 인덱스"
+                android:inputType="text"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
+    </LinearLayout>
+
+    <!-- GATT4 -->
+    <LinearLayout
+        android:id="@+id/container4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="시작 인덱스 : "
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/start_index"
+                android:layout_weight="1"
+                android:hint="시작 인덱스"
+                android:inputType="text"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="최대 인덱스 : "
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/end_index"
+                android:layout_weight="1"
+                android:hint="최대 인덱스"
+                android:inputType="text"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
+
+    </LinearLayout>
+
+    <!-- GATT6 -->
+    <LinearLayout
+        android:id="@+id/container6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="저장 인터벌 : "
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/log_interval"
+                android:layout_weight="1"
+                android:hint="저장 인터벌"
+                android:inputType="text"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Advertise 인터벌 : "
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/adv_interval"
+                android:layout_weight="1"
+                android:hint="Advertise 인터벌"
+                android:inputType="text"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
+
+    </LinearLayout>
+
+    <!-- GATT10 -->
+    <LinearLayout
+        android:id="@+id/container10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="-80 : "
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/cali1"
+                android:layout_weight="1"
+                android:hint="-80"
+                android:inputType="text"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="-40 : "
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/cali2"
+                android:layout_weight="1"
+                android:hint="-40"
+                android:inputType="text"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="-20 : "
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/cali3"
+                android:layout_weight="1"
+                android:hint="-20"
+                android:inputType="text"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="5 : "
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/cali4"
+                android:layout_weight="1"
+                android:hint="5"
+                android:inputType="text"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="20 : "
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/cali5"
+                android:layout_weight="1"
+                android:hint="20"
+                android:inputType="text"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/btn_get_offset"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="get offset"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <!-- GATT11 -->
+    <LinearLayout
+        android:id="@+id/container11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="보정 인덱스 : "
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/cali_index"
+                android:layout_weight="1"
+                android:hint="보정 인덱스"
+                android:inputType="text"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
+
+    </LinearLayout>
+
+    <!-- 버튼 영역 -->
+    <TableRow
+        android:gravity="center_horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="취소"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="확인"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+    </TableRow>
+</TableLayout>

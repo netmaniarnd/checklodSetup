@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/btn_container1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:weightSum="2">
+
+                <!--<Button
+                    android:id="@+id/btn_request"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="2"
+                    android:text="ROOP TEST" />-->
+                <EditText
+                    android:id="@+id/text_mac"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:hint="@string/macaddress"
+                    android:scrollbars="vertical" />
+
+                <Button
+                    android:id="@+id/btn_connection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="@string/connection" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:id="@+id/btn_container2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:weightSum="2">
+
+                <!--<Button
+                    android:id="@+id/btn_request"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="2"
+                    android:text="ROOP TEST" />-->
+                <TextView
+                    android:id="@+id/text_connection"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:scrollbars="vertical" />
+
+            </LinearLayout>
+
+            <include layout="@layout/content_device_list" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">체크로드SETUP</string>
+    <string name="permission_denied_msg">권한을 거부 할 경우 본 서비스를 이용하실 수 없습니다.\n\n[설정]> [권한]에서 권한을 켜주세요.</string>
+
+    <string name="advertise_name">Advertise Mode</string>
+    <string name="connection_name">디바이스 설정</string>
+    <string name="macaddress">MacAddress</string>
+    <string name="connection">CONNECTION</string>
+
+    <string-array name="temp_name">
+        <item>all</item>
+        <item>-70℃</item>
+        <item>-40℃ ~ -20℃</item>
+        <item>2℃ ~ 8℃</item>
+        <item>15℃ ~ 25℃</item>
+    </string-array>
+
+    <string-array name="temp_list">
+        <item>{\"name\" : \"all\"  , \"min\" : -100 , \"max\" : 100}</item>
+        <item>{\"name\" : \"-70\"  , \"min\" : -100 , \"max\" :-70 }</item>
+        <item>{\"name\" : \"-40~-20\"  , \"min\" : -40 , \"max\" : -5}</item>
+        <item>{\"name\" : \"2~8\"  , \"min\" : 0 , \"max\" : 10  }</item>
+        <item>{\"name\" : \"15~25\"  , \"min\" : 10 , \"max\" : 30 }</item>
+    </string-array>
+
+    <string-array name="temp_orange">
+        <item>{\"min\" : -20 , \"max\" : 5}</item>
+        <item>{\"min\" : 2 , \"max\" : 3}</item>
+        <item>{\"min\" : 7 , \"max\" : 8}</item>
+        <item>{\"min\" : 15 , \"max\" : 20}</item>
+        <item>{\"min\" : 25 , \"max\" : 30}</item>
+        <item>{\"min\" : -70 , \"max\" : -65}</item>
+    </string-array>
+
+    <string-array name="temp_red">
+        <item>{\"min\" : -5 , \"max\" : -2}</item>
+        <item>{\"min\" : 8 , \"max\" : 15}</item>
+        <item>{\"min\" : -65 , \"max\" : -40}</item>
+    </string-array>
+
+    <array name="autosize_text_sizes">
+        <item>2sp</item>
+        <item>4sp</item>
+        <item>6sp</item>
+        <item>8sp</item>
+        <item>10sp</item>
+        <item>12sp</item>
+        <item>14sp</item>
+        <item>16sp</item>
+        <item>18sp</item>
+        <item>20sp</item>
+    </array>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="alert_need_bluetooth">블루투스가 활성화 되어야 어플리케이션이 정상 동작합니다.</string>
+
+    <string name="init">초기화</string>
+    <string name="layout">레이아웃</string>
+    <string name="temp">온도별</string>
+
+    <string name="time_utils_something" formatted="false">%d시간,%d분,%d초</string>
+
+    <string name="progress_takeover_title">데이터 저장중</string>
+    <string name="progress_takeover_message">배송 데이터를 가져옵니다.</string>
+</resources>
