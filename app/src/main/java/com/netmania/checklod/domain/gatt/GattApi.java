@@ -24,6 +24,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 
+import okio.ByteString;
+
 public class GattApi {
 
     private static final String TAG = GattApi.class.getSimpleName();
@@ -177,9 +179,14 @@ public class GattApi {
                         currentByte1[0], currentByte1[1]};//, Byte.parseByte(Integer.toString(checkSum))};
                 break;
             case 6:
-                byteValues = new byte[]{Utility.GATT_COMMAND_STX, 0x06,
-                        Byte.parseByte(data.get(0).toString()),
-                        Byte.parseByte(data.get(1).toString())};//, Byte.parseByte(Integer.toString(checkSum))};
+                // todo : 128 에러
+                int val1 = Integer.parseInt(data.get(0).toString());
+                int val2 = Integer.parseInt(data.get(1).toString());
+                val1 = Math.min(val1, 127);
+                val2 = Math.min(val2, 127);
+                byteValues = new byte[]{com.netmania.ble.util.Utility.GATT_COMMAND_STX, 0x06,
+                        (byte) val1,
+                        (byte) val2};//, Byte.parseByte(Integer.toString(checkSum))};
                 break;
             case 10:
             case 13:
@@ -227,6 +234,14 @@ public class GattApi {
         characteristic.setValue(byteValues);
         mNewGattCallback.onRequest(byteValues);
         mGatt.writeCharacteristic(characteristic);
+    }
+
+    public static byte u2b(int in) {
+        if(in>127) {
+            return (byte)(in - 256);
+        } else {
+            return (byte)in;
+        }
     }
 
     private void resetGatt(int status) {
@@ -354,7 +369,7 @@ public class GattApi {
         try {
             Log.e(TAG, Utility.RX_CHAR_UUID.toString());
             characteristic = mGatt.getService(Utility.RX_SERVICE_UUID).getCharacteristic(Utility.RX_CHAR_UUID);
-        } catch(Exception e) {
+        } catch (Exception e) {
             Log.e(TAG, "Exception ::" + e.toString());
             return;
         }
@@ -381,7 +396,7 @@ public class GattApi {
         try {
             Log.e(TAG, Utility.RX_CHAR_UUID.toString());
             characteristic = mGatt.getService(Utility.RX_SERVICE_UUID).getCharacteristic(Utility.RX_CHAR_UUID);
-        } catch(Exception e) {
+        } catch (Exception e) {
             Log.e(TAG, "Exception ::" + e.toString());
             return;
         }
