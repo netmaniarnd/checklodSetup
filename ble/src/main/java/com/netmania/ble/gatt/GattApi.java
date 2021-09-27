@@ -134,9 +134,18 @@ public class GattApi {
                         currentByte1[0], currentByte1[1]};//, Byte.parseByte(Integer.toString(checkSum))};
                 break;
             case 6:
+                int val1 = Integer.parseInt(data.get(0).toString());
+                int val2 = Integer.parseInt(data.get(1).toString());
+                Log.e(TAG, "val1 : " + val1 + " :: val2 : " + val2);
+                val1 = Math.min(val1, 127);
+                val2 = Math.min(val2, 127);
+                Log.e(TAG, "val1 : " + val1 + " :: val2 : " + val2);
                 byteValues = new byte[]{Utility.GATT_COMMAND_STX, 0x06,
+                        (byte) val1,
+                        (byte) val2};//, Byte.parseByte(Integer.toString(checkSum))};
+                /*byteValues = new byte[]{Utility.GATT_COMMAND_STX, 0x06,
                         Byte.parseByte(data.get(0).toString()),
-                        Byte.parseByte(data.get(1).toString())};//, Byte.parseByte(Integer.toString(checkSum))};
+                        Byte.parseByte(data.get(1).toString())};//, Byte.parseByte(Integer.toString(checkSum))};*/
                 break;
             case 10:
             case 13:
